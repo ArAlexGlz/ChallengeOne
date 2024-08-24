@@ -1,0 +1,208 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: white;
+  /*float: left;*/
+}
+img{
+  width: 100%;
+}
+@media only screen and (max-width: 1000px) {
+  .main-body {
+    flex-direction: column;
+  }
+  .main-body .texto-boton-encriptar{
+    padding-left: 7%;
+  }
+  .main-body .texto-boton-desencriptar{
+    padding-left: 7%;
+  }
+}
+@media only screen and (min-width: 1000px){
+  .main-body{
+    flex-direction: row;
+  }
+  .main-body .texto-boton-encriptar{
+    padding-left: 35%;
+  }
+  .main-body .texto-boton-desencriptar{
+    padding-left: 35%;
+  }
+}
+body {
+  background: linear-gradient(#1354A5 0%, #041832 33.33%, #041832 66.67%, #01080E 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+.main-body .boton-encriptar {
+  border-radius: 24px;
+  background: var(--dark-bluedark-blue-300, #0A3871);
+  margin-right: 24px;
+  display: flex;
+  padding: 24px 0;
+  width: 328px;
+  box-sizing: border-box;
+}
+.main-body .boton-desencriptar {
+  border-radius: 24px;
+  border: 1px solid var(--dark-bluedark-blue-300, #0A3871);
+  background: #D8DFE8;
+  display: flex;
+  padding: 23px 0;
+  width: 328px;
+  box-sizing: border-box;
+  color:#01080E;
+}
+.main-body .texto-resultado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.main-body .muneco {
+  margin-bottom: 32px;
+  width: 70%;
+  height: 80%;
+}
+.main-body .texto-resultado-modificable {
+  margin-bottom: 16px;
+  display: inline-block;
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  color: var(--graygray-500, #343A40);
+}
+.main-body .texto-resultado-modificable-2 {
+  text-align: center;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--graygray-400, #495057);
+}
+.main-body {
+  background: var(--light-bluelight-blue-100, #F3F5FC);
+  display: flex;
+  padding: 40px 40px 40px 84px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.main-body .texto-a-encriptar {
+  
+  height: 100%;
+  width: 100%;
+  margin-bottom: 5%;
+  display: inline-block;
+  align-self:normal;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.5;
+  color: var(--dark-bluedark-blue-300, #0A3871);
+  padding: 5% 0%;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+
+.main-body .botones-encriptar-desencriptar {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  box-sizing: border-box;
+}
+.main-body .advertencia {
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.main-body .imagen-advertencia {
+  margin: 1px 8px 1px 0;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.main-body .vector-130 {
+  width: 16px;
+  height: 16px;
+}
+.main-body .texto-advertencia {
+  opacity: 0.8;
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  color: var(--graygray-400, #495057);
+}
+.main-body .container-textbox {
+  margin: 13% 5% 5% 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: fit-content;
+  padding: 0% 0% 0% 0%;
+  float: left;
+}
+.main-body .resultado {
+  box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  border-radius: 32px;
+  background: #FFFFFF;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10% 5%;
+  width: 100%;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.main-body .logo {
+  margin: 0 124.9px 896px 0;
+  display: flex;
+  width: 120px;
+  height: 48px;
+  box-sizing: border-box;
+}
+.main-body .logo-img{
+  width: 30%;
+  height: 48px;
+  min-width: 20px;
+  min-height: 20px; 
+}
+.main-body .boton-encriptar{
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--white, #FFFFFF);
+  text-align: center;
+}
+.main-body .boton-desencriptar {
+  overflow-wrap: break-word;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--dark-bluedark-blue-300, #0A3871);
+  text-align: center;
+}
+.main-body .texto-boton-desencriptar{
+  color:#01080E;
+}

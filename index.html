@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge One</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-body">
+        <div class="logo-alura">
+          <img class="logo-img" src="./assets/vector_x2.svg" style="width:100%;"/>
+        </div>
+        <div class="container-textbox">
+          <textarea class="texto-a-encriptar" id="texto1">Ingrese el texto aqui</textarea>
+          <div class="advertencia">
+            <div class="imagen-advertencia">
+              <img class="vector-130" src="./assets/vector_7_x2.svg" style="width:100%;" />
+            </div>
+            <span class="texto-advertencia">
+              Solo letras minúsculas y sin acentos
+            </span>
+          </div>
+          <div class="botones-encriptar-desencriptar">
+            <button class="boton-encriptar" onclick="codificar()">
+              <span class="texto-boton-encriptar">
+                Encriptar
+              </span>
+            </button>
+            <button class="boton-desencriptar" onclick="decodificar()">
+              <span class="texto-boton-desencriptar">
+                Desencriptar
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="resultado" >
+          <img class="muneco" src="./assets/muneco_x2.svg" style="width:100%;" />
+          <div class="texto-resultado">
+            <div class="texto-resultado-modificable">
+              Ningún mensaje fue encontrado
+            </div>
+            <span class="texto-resultado-modificable-2" id="resultado-texto">
+              Ingresa el texto que desees encriptar o desencriptar.
+            </span>
+          </div>
+        </div>
+      </div>
+      <script src="prueba.js"></script>
+</body>
+</html>
